@@ -17,6 +17,7 @@ def model_view(
         decoder_attention=None,
         cross_attention=None,
         encoder_tokens=None,
+        encoder_sliced_tokens=None,
         decoder_tokens=None,
         include_layers=None,
         include_heads=None,
@@ -169,7 +170,7 @@ def model_view(
                     'name': 'Cross',
                     'attn': cross_attention.tolist(),
                     'left_text': decoder_tokens,
-                    'right_text': encoder_tokens
+                    'right_text': encoder_sliced_tokens
                 }
             )
     else:
