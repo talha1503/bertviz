@@ -17,6 +17,7 @@ def model_view(
         decoder_attention=None,
         cross_attention=None,
         encoder_tokens=None,
+        encoder_sliced_tokens=None,
         decoder_tokens=None,
         include_layers=None,
         include_heads=None,
